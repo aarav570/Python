@@ -68,4 +68,3 @@ if __name__ == "__main__":
 
     print("Farey sequence of order 4:")
     print(farey_sequence(4))
-

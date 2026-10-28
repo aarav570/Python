@@ -22,8 +22,10 @@ def farey_sequence(order: int) -> list[Fraction]:
     [Fraction(0, 1), Fraction(1, 1)]
     >>> farey_sequence(2)
     [Fraction(0, 1), Fraction(1, 2), Fraction(1, 1)]
-    >>> farey_sequence(5)
-    [Fraction(0, 1), Fraction(1, 5), Fraction(1, 4), Fraction(1, 3), Fraction(2, 5), Fraction(1, 2), Fraction(3, 5), Fraction(2, 3), Fraction(3, 4), Fraction(4, 5), Fraction(1, 1)]
+    >>> farey_sequence(3)
+    [Fraction(0, 1), Fraction(1, 3), Fraction(1, 2), Fraction(2, 3), Fraction(1, 1)]
+    >>> [(f.numerator, f.denominator) for f in farey_sequence(4)]
+    [(0, 1), (1, 4), (1, 3), (1, 2), (2, 3), (3, 4), (1, 1)]
     >>> farey_sequence(0)
     Traceback (most recent call last):
         ...
